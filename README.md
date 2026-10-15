@@ -1,4 +1,4 @@
-# hex-perm-group-mathlib
+# hex-perm-group-theory
 
 Mathlib correspondences for [`hex-perm-group`](https://github.com/leanprover/hex-perm-group).
 The companion identifies Hex's explicit `Fin n` permutations, generated
@@ -6,7 +6,7 @@ subgroups, orders, actions, stabilizers, blocks, normal structure, and product
 constructions with Mathlib's group-theoretic objects.
 
 ```lean
-import HexPermGroupMathlib
+import HexPermGroupTheory
 
 open Hex Hex.PermGroup
 
@@ -25,12 +25,12 @@ not enlarge the trusted runtime boundary.
 
 ```toml
 [[require]]
-name = "HexPermGroupMathlib"
-git = "https://github.com/leanprover/hex-perm-group-mathlib.git"
+name = "HexPermGroupTheory"
+git = "https://github.com/leanprover/hex-perm-group-theory.git"
 rev = "main"
 ```
 
-The companion manifest pins `hex-perm-group`; import `HexPermGroupMathlib` as
+The companion manifest pins `hex-perm-group`; import `HexPermGroupTheory` as
 above.
 
 # Functionality
@@ -41,7 +41,7 @@ Mathlib developments.
 
 # Verification
 
-`HexPermGroupMathlib.Tests` builds the bridge contracts against the pinned
+`HexPermGroupTheory.Tests` builds the bridge contracts against the pinned
 Mathlib revision while the computational package remains Mathlib-free.
 
 # Contributing
